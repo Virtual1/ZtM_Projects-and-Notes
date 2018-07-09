@@ -1,20 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!-- To tell the browser which language this page is written in-->
+<html lang="en"> <!-- to indicate language of site-->
+<head>      <!-- Every website begins with a head section to indicate what's needed to display the page-->
+    <!-- meta tags provide more info about the document. Meta means more data or info -->
+    <!-- meta tags always go in the head section -->
+    <meta charset="UTF-8">  <!-- Informs the browser what character set is being used -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index to my notes and projects</title>
+    <!-- The viewport (responsive design) is the visible area of the page. Varies by device, will be smaller on mobile -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- not really sure what this does -->
+    <!-- can also use style tags in HTML, but preferred to be used seperately in CSS stylesheet -->
+    <style>        
+        body {background-color: powderblue;}  
+        h1 {color: red;}                      
+        p {color: blue;}                       
+    </style>      
+    <!-- style tag needs to be  in an open/closed pair-->
+    <!-- these format the appearance of the different indicated tags ( ie. body, h1, p) in the body of only this page -->
+
+    <!-- the preferred way to format your sheets are through a linked style sheet -->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!-- if you're linking to images and other files in your site, it's probably a good idea to include a base refrence. -->
+    <!-- this indicates the base URL/target for all relative URL's in this page, so it works like you planned. -->
+    <base href="https://www.virtual1.co.za/images/" target="_blank">
+
+    <!-- ohter meta's that could be used is name / content combinations, may be useful for SEO, eg. -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Study Notes, ZtM">
+    <meta name="author" content="Virtual1"
+    <meta name="description" content="My notes on the ZtM course">
+
+    <title>Index to my notes and projects</title> <!--Tab title, also used in search engines and for favourites -->
+
 </head>
 <body>
     <!-- the plan is to make a section / page / something to correspond to each section of the course 
     to make it easier for myself to find whatever I'm looking for later on. Hopefully this will work better
     than my manual notes - It just takes forever to find stuff there! :( -->
 
+<!-- So in the body we can have headings of different sizes from h1 to h6 -->
+<h1>This is a H1 heading</h1>
+<h4>This is a H4 heading</h4>
 
+<!-- we also have paragraph tags, to break up blocks of words -->
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, esse deleniti eligendi veritatis architecto facilis deserunt ipsum aut perferendis voluptatibus ullam sint debitis at, quasi dolores. Vel adipisci amet ullam.</p>
+<!-- you can also force a line break by using the br tag -->
+<p>Kitty ipsum:<br>Submit a Cat Ipsum
+    Cat ipsum dolor sit amet, chew iPad power cord shove bum in owner's face like camera lens. I just saw other cats inside the house and nobody ask me before using my litter box stand in doorway, unwilling to chose whether to stay in or go out, yet refuse to drink water except out of someone's glass. Unwrap toilet paper. Loved it, hated it, loved it, hated it mark territory, so jump off balcony, onto stranger's head find empty spot in cupboard and sleep all day for leave dead animals as gifts, for run in circles, so warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats. Scream for no reason at 4 am destroy couch. Meow to be let in. Cats are fats i like to pets them they like to meow back stretch curl into a furry donut and weigh eight pounds but take up a full-size bed, sit on the laptop lay on arms while you're using the keyboard and scratch the postman wake up lick paw wake up owner meow meow. Sleeps on my head flee in terror at cucumber discovered on floor. I like big cats and i can not lie prance along on top of the garden fence, annoy the neighbor's dog and make it bark allways wanting food. Play time ask for petting russian blue.  </p>
+<!-- script elements goes into the bottom of the body section. This is so that the site can load and display to guests, while your magic is loading, so it doesn't cause delays. -->
+<script>
+function myFunction {
+                document.getElementById("demo").innerHTML ="Hello Javascript!"
+                    }
 
-
-
+</script>
 </body>
 
 </html>
